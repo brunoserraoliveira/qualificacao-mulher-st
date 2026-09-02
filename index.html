@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualificação Profissional - Secretaria da Mulher | Serra Talhada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'sec-purple': '#582C73',
+                        'sec-pink': '#D94B8C',
+                        'sec-light': '#FDF2F8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Cabeçalho Institucional -->
+    <header class="bg-white border-b border-gray-200 shadow-sm w-full z-50">
+        <div class="max-w-[1400px] mx-auto px-4 py-3 flex items-center">
+            <!-- Logo Prefeitura alinhada à esquerda com tamanho grande -->
+            <img src="img/logo_horizontal.png" alt="Prefeitura Municipal de Serra Talhada" class="h-20 sm:h-24 md:h-28 object-contain">
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-8 pb-16 px-4">
+        
+        <!-- Cartão Principal (Hero Card Estilo Banner) -->
+        <div class="max-w-6xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100 relative">
+            <!-- Faixa decorativa no topo -->
+            <div class="h-4 w-full bg-gradient-to-r from-sec-purple to-sec-pink"></div>
+            
+            <div class="p-8 md:p-12 lg:p-16 flex flex-col items-center text-center relative z-10">
+                <!-- Logo Secretaria da Mulher em Destaque -->
+                <img src="img/sec_mulher.jpeg" alt="Logo Secretaria da Mulher" class="h-32 sm:h-40 md:h-48 object-contain mb-10">
+                
+                <h1 class="text-3xl md:text-5xl font-bold text-sec-purple mb-6 leading-tight">
+                    Cursos de Qualificação Profissional
+                </h1>
+                
+                <p class="text-lg md:text-2xl text-gray-600 mb-10 max-w-3xl">
+                    Capacitação para mulheres: conhecimento que transforma, qualifica e gera oportunidades.
+                </p>
+                
+                <div class="bg-sec-light px-8 py-6 rounded-2xl border-l-4 border-sec-pink max-w-4xl shadow-inner">
+                    <p class="text-xl md:text-2xl font-semibold italic text-sec-purple">
+                        “Qualificar mulheres é abrir caminhos para a autonomia, a independência e novas oportunidades.”
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão CTA Principal (Gradiente da Marca) -->
+        <div class="max-w-6xl mx-auto flex justify-center mt-8 mb-16">
+            <a href="URL_DO_SEU_GOOGLE_FORMS_AQUI" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-sec-purple to-sec-pink text-white font-bold text-lg md:text-xl py-4 px-10 md:px-16 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3">
+                <i class="fa-solid fa-check-circle"></i> QUERO ME INSCREVER
+            </a>
+        </div>
+
+        <!-- Grid de Cursos -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+            <!-- Curso 1: Design de Sobrancelhas -->
+            <div class="bg-white rounded-[2rem] shadow-lg border-t-4 border-sec-pink overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="p-8 md:p-10 flex-grow flex flex-col">
+                    <div class="flex items-center gap-5 mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-pink-50 flex items-center justify-center text-sec-pink text-3xl shadow-sm border border-pink-100">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-sec-purple">Design de Sobrancelhas</h2>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Resumo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Curso voltado para mulheres que desejam aprender técnicas de design de sobrancelhas e iniciar ou aprimorar uma atividade profissional na área da beleza, contribuindo para sua autonomia financeira e geração de renda.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Objetivo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Proporcionar às participantes conhecimentos teóricos e práticos para a realização do design de sobrancelhas com segurança e qualidade, possibilitando novas oportunidades de trabalho e geração de renda.
+                        </p>
+                    </div>
+
+                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Conteúdo do Curso</h3>
+                        <ul class="text-sm text-gray-700 grid grid-cols-1 gap-3">
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Introdução ao design de sobrancelhas</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Visagismo e formatos de rosto</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Identificação dos diferentes formatos de sobrancelhas</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Higienização e biossegurança</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Materiais e instrumentos utilizados</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Técnicas de medição e marcação</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Simetria e alinhamento</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Técnicas de remoção dos pelos</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Acabamento e finalização</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Cuidados pré e pós-procedimento</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Atendimento e relacionamento com a cliente</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Noções de precificação e organização do serviço</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Prática de design de sobrancelhas</li>
+                        </ul>
+                    </div>
+
+                    <!-- Botão Individual do Curso -->
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <a href="URL_DO_SEU_GOOGLE_FORMS_AQUI" target="_blank" class="block w-full text-center bg-sec-pink text-white font-bold py-4 rounded-xl shadow-md hover:bg-pink-600 hover:shadow-lg transition-all duration-300">
+                            Garantir Vaga - Sobrancelhas
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curso 2: Dindin Gourmet -->
+            <div class="bg-white rounded-[2rem] shadow-lg border-t-4 border-sec-purple overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                <div class="p-8 md:p-10 flex-grow flex flex-col">
+                    <div class="flex items-center gap-5 mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-50 flex items-center justify-center text-sec-purple text-3xl shadow-sm border border-purple-100">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-sec-purple">Dindin Gourmet</h2>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Resumo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Curso destinado a mulheres que desejam aprender a produzir dindins gourmet, desde a preparação das receitas até técnicas de montagem, conservação, apresentação e comercialização, transformando uma habilidade culinária em uma possibilidade de geração de renda.
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Objetivo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Capacitar as participantes para produzir dindins gourmet com qualidade e segurança, oferecendo conhecimentos que possam ser utilizados para iniciar uma pequena atividade comercial e ampliar a renda familiar.
+                        </p>
+                    </div>
+
+                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4">Conteúdo do Curso</h3>
+                        <ul class="text-sm text-gray-700 grid grid-cols-1 gap-3">
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Introdução à produção de dindin gourmet</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Utensílios e materiais necessários</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Seleção e preparação dos ingredientes</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Higiene e boas práticas na manipulação de alimentos</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Preparação das bases</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Técnicas de recheio e montagem</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Sabores tradicionais e gourmet</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Combinações de sabores</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Textura, cremosidade e conservação</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Armazenamento e congelamento</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Embalagem e apresentação</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Cálculo de custos e formação de preço</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Divulgação e vendas</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Estratégias para começar a empreender</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Prática de produção</li>
+                        </ul>
+                    </div>
+
+                    <!-- Botão Individual do Curso -->
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <a href="URL_DO_SEU_GOOGLE_FORMS_AQUI" target="_blank" class="block w-full text-center bg-sec-purple text-white font-bold py-4 rounded-xl shadow-md hover:bg-purple-900 hover:shadow-lg transition-all duration-300">
+                            Garantir Vaga - Dindin
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-10 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center items-center text-center">
+            <div>
+                <p class="text-gray-600 font-semibold">Prefeitura Municipal de Serra Talhada</p>
+                <p class="text-gray-500 text-sm mb-4">Secretaria da Mulher</p>
+            </div>
+            
+            <!-- Assinatura NTI -->
+            <div class="mt-2 pt-4 border-t border-gray-100 w-full max-w-[200px]">
+                <p class="text-gray-400 text-xs font-medium">Produzido por NTI Serra Talhada</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
