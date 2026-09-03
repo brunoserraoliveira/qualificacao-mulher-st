@@ -1,0 +1,52 @@
+name: Deploy Automático para Hostinger
+
+on:
+  # Permite que o deploy rode automaticamente ao dar push na main
+  push:
+    branches:
+      - main
+  
+  # ESSE É O COMANDO QUE CRIA O BOTÃO MANUAL NO GITHUB
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Baixa o código do repositório
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      # 2. Faz login no Docker Hub
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 3. Prepara o Docker Buildx
+      - name: Configurar Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 4. Gera a imagem Docker e envia para o Docker Hub com as tags
+      - name: Build e Push da imagem Docker
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: |
+            brunooliverserra/qualificacao-mulher-st:1.0
+            brunooliverserra/qualificacao-mulher-st:latest
+
+      # 5. Acessa a VPS Hostinger e atualiza o container
+      - name: Deploy na VPS Hostinger
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          password: ${{ secrets.HOSTINGER_PASSWORD }}
+          script: |
+            cd ${{ secrets.VPS_PROJECT_PATH }}
+            docker compose pull
+            docker compose up -d --remove-orphans
