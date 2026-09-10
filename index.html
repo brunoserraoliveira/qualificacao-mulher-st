@@ -39,7 +39,7 @@
     <main class="flex-grow pt-8 pb-16 px-4">
         
         <!-- Cartão Principal (Hero Card Estilo Banner) -->
-        <div class="max-w-6xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100 relative mb-12">
+        <div class="max-w-6xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-100 relative mb-10">
             <!-- Faixa decorativa no topo -->
             <div class="h-4 w-full bg-gradient-to-r from-sec-purple to-sec-pink"></div>
             
@@ -63,7 +63,32 @@
             </div>
         </div>
 
-        <!-- Grid de Cursos (Sem os botões internos) -->
+        <!-- Seção de Aviso: Inscrições Abertas -->
+        <div class="max-w-6xl mx-auto mb-12">
+            <div class="bg-white rounded-2xl shadow-md border-l-8 border-sec-pink p-8 lg:p-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-sec-purple mb-4">💗 Inscrições Abertas</h2>
+                <p class="text-gray-700 text-lg mb-3">A Secretaria da Mulher preparou uma oportunidade especial para você!</p>
+                <p class="text-gray-700 text-lg mb-6">Estão abertas as inscrições para nossos cursos profissionalizantes gratuitos, pensados para contribuir com a capacitação, a autonomia e a geração de renda das mulheres.</p>
+                
+                <!-- Caixa de Atenção -->
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg mb-6 shadow-sm">
+                    <p class="text-amber-900 font-bold mb-2">⚠️ Atenção: cada turma contará, inicialmente, com apenas 25 vagas.</p>
+                    <p class="text-amber-800">As vagas serão preenchidas por ordem de inscrição. Após o preenchimento da turma, será formada uma lista de espera, e as mulheres cadastradas serão priorizadas para as próximas turmas.</p>
+                </div>
+
+                <p class="text-sec-pink font-bold text-xl mb-4">✨ Garanta sua vaga e invista em você!</p>
+                
+                <!-- Contato -->
+                <p class="text-gray-700 text-md mb-6 flex items-center gap-2 bg-gray-50 inline-flex px-4 py-2 rounded-lg border border-gray-100">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                    <span>Dúvidas? Fale conosco: <strong>(87) 99999-8888</strong></span>
+                </p>
+
+                <p class="text-gray-500 font-medium italic block">Secretaria da Mulher — capacitando mulheres, fortalecendo histórias e construindo novas oportunidades.</p>
+            </div>
+        </div>
+
+        <!-- Grid de Cursos -->
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
 
             <!-- Curso 1: Design de Sobrancelhas -->
@@ -90,7 +115,7 @@
                         </p>
                     </div>
 
-                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100 mb-8">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Conteúdo do Curso</h3>
                         <ul class="text-sm text-gray-700 grid grid-cols-1 gap-3">
                             <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Introdução ao design de sobrancelhas</li>
@@ -107,6 +132,13 @@
                             <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Noções de precificação e organização do serviço</li>
                             <li class="flex items-start"><i class="fa-solid fa-check text-sec-pink mt-1 mr-3"></i> Prática de design de sobrancelhas</li>
                         </ul>
+                    </div>
+
+                    <!-- Botão Individual - Google Forms Sobrancelhas -->
+                    <div class="mt-auto pt-4">
+                        <a href="https://forms.gle/jAj4J1Z1RnUf778z6" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-sec-pink text-white font-bold text-lg py-4 rounded-xl shadow-md hover:bg-pink-600 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
+                            <i class="fa-solid fa-check-circle mr-2"></i> Inscrever-se neste curso
+                        </a>
                     </div>
                 </div>
             </div>
@@ -135,7 +167,7 @@
                         </p>
                     </div>
 
-                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100">
+                    <div class="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-100 mb-8">
                         <h3 class="text-lg font-bold text-gray-800 mb-4">Conteúdo do Curso</h3>
                         <ul class="text-sm text-gray-700 grid grid-cols-1 gap-3">
                             <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Introdução à produção de dindin gourmet</li>
@@ -155,18 +187,17 @@
                             <li class="flex items-start"><i class="fa-solid fa-check text-sec-purple mt-1 mr-3"></i> Prática de produção</li>
                         </ul>
                     </div>
+
+                    <!-- Botão Individual - Google Forms Dindin -->
+                    <div class="mt-auto pt-4">
+                        <a href="https://forms.gle/F8DKzEqCRUAfNvPk9" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-sec-purple text-white font-bold text-lg py-4 rounded-xl shadow-md hover:bg-purple-900 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
+                            <i class="fa-solid fa-check-circle mr-2"></i> Inscrever-se neste curso
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-        <!-- Botão CTA Único (Posicionado ao final dos cursos) -->
-        <div class="max-w-6xl mx-auto flex justify-center mt-12 mb-4">
-            <a href="https://forms.gle/UBLCvTXT4K5EhEnQ6" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-sec-purple to-sec-pink text-white font-bold text-lg md:text-xl py-4 px-10 md:px-16 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 w-full sm:w-auto">
-                <i class="fa-solid fa-check-circle"></i> QUERO ME INSCREVER
-            </a>
-        </div>
-        
     </main>
 
     <!-- Footer -->
@@ -174,7 +205,12 @@
         <div class="max-w-6xl mx-auto px-4 flex flex-col justify-center items-center text-center">
             <div>
                 <p class="text-gray-600 font-semibold">Prefeitura Municipal de Serra Talhada</p>
-                <p class="text-gray-500 text-sm mb-4">Secretaria da Mulher</p>
+                <p class="text-gray-500 text-sm mb-2">Secretaria da Mulher</p>
+                <!-- Contato no Footer -->
+                <p class="text-gray-600 text-sm mb-4 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-lg"></i>
+                    <strong>(87) 99999-8888</strong>
+                </p>
             </div>
             
             <!-- Assinatura NTI -->
